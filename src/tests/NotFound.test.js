@@ -9,8 +9,10 @@ describe('Verifies the component "<NotFound />"', () => {
   });
 
   it('Contains a heading with the text "Page requested not found 😭"', () => {
-    const title = screen.getByRole('heading',
-      { name: /page requested not found crying emoji/i, level: 2 });
+    const title = screen.getByRole('heading', {
+      name: /page requested not found crying emoji/i,
+      level: 2,
+    });
 
     expect(title).toBeInTheDocument();
   });
@@ -18,7 +20,9 @@ describe('Verifies the component "<NotFound />"', () => {
     const image = screen.getByRole('img', {
       name: /pikachu crying because the page requested was not found/i,
     });
-    expect(image).toHaveAttribute('src',
-      'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
+    expect(image).toHaveAttribute(
+      'src',
+      'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif',
+    );
   });
 });

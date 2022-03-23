@@ -12,7 +12,9 @@ describe('Verifies the Component "<FavoritePokemons />"', () => {
     expect(favoriteText).toBeDefined();
   });
   it('Shows all favorited pokemons', () => {
-    const { history: { push } } = renderWithRouter(<App />);
+    const {
+      history: { push },
+    } = renderWithRouter(<App />);
 
     const details = screen.getByRole('link', { name: /more details/i });
     userEvent.click(details);
