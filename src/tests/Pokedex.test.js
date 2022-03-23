@@ -48,8 +48,8 @@ describe('Verifies the <Pokedex/> ', () => {
     expect(psychicButton).toBeDefined();
 
     userEvent.click(psychicButton);
-    const type = screen.getAllByText(/psychic/i);
-    expect(type).toHaveLength(TWO);
+    const type = screen.getAllByText(/alakazam/i);
+    expect(type).toBeDefined();
 
     userEvent.click(all);
   });
