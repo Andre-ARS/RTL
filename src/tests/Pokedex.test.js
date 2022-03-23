@@ -6,7 +6,6 @@ import App from '../App';
 import pokemons from '../data';
 
 const ONE = 1;
-const TWO = 2;
 const SEVEN = 7;
 
 describe('Verifies the <Pokedex/> ', () => {
